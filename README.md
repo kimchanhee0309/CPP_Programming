@@ -35,7 +35,7 @@
    * 객체 : 클래스라는 틀에서 생겨난 실체(instance)
    * C++ 클래스는 멤버 변수들과 멤버 함수들로 이루어지며, 멤버들은 캡슐 외부에 공개하거나(public), 보이지 않게(private) 선언할 수 있음
    * 예시 코드
-     '''
+     ```C++
      class Circle
 {
 private:
@@ -44,7 +44,7 @@ public:
   Circle(int r) { radius = r; }
   double getArea() { return 3.14*radius*radius; }
 };
-     ''' 
+     ```
 * **상속성(Interitance)**
 * **다형성(Poltmorphism) - 연산자 중복, 함수 중복, 함수 오버라이딩**
 
