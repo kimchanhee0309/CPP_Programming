@@ -80,7 +80,7 @@ class MusicPhone : public MobilePhone //MobilePhone을 상속 받음
    * **함수 중복(function overloading)**
      * 같은 이름의 함수가 매개 변수의 개수나 타입이 다르면 서로 다른 함수로 인식되는 것
      * 예시 코드
-```
+```C++
 class Phone
 {
   void call();
@@ -129,7 +129,7 @@ class MusicPhone : public MobilePhone //MobilePhone을 상속 받음
 
 **C++ 언어와 제네릭 프로그래밍(generic programming)**
 * 제네릭 프로그래밍이란?
-   * 동일한 프로그램 코드에 다양한 데이터 타입을 적용할 수 있도록 함수와 클래스를 일반화시킨 '제네릭 함수(generic function)'와 '제네릭 클래스(generic clss)'를 만들고,
+   * 동일한 프로그램 코드에 다양한 데이터 타입을 적용할 수 있도록 함수와 클래스를 일반화시킨 **제네릭 함수(generic function)** 와 **제네릭 클래스(generic clss)** 를 만들고,
    * 개발자가 원하는 데이터 타입을 적용시켜 프로그램 코드를 틀에서 찍어내는 듯이 생산하는 기법
    * 입출력 라이브러리를 과감하게 템플릿(template)으로 선언하여 제네릭화하고, 응용 프로그램 개발에 필요한 대부분의 자료 구조를 제네릭 함수와 제네릭 클래스로 구현한 STL(Standard Template Library)을 표준화함  
 
