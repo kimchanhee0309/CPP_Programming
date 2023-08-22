@@ -224,6 +224,3 @@ int main() {
 Falling in love with you를 부른 가수는(힌트 :  첫글자는 E)?Elvis Pride
 틀렸습니다. Elvis Presley입니다.
 ``` 
-
-___
-### 2.3 #include <iostream>에 숨은 진실
