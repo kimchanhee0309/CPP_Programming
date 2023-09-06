@@ -19,6 +19,7 @@ ___
 <summary>2. 디폴트 접근 지정은 private</summary>
 <div markdown="1">       
 
+* 접근 지정을 하지 않은 경우, 디폴트 접근 지정은 private으로 처리됨
 </div>
 </details>
 
@@ -28,5 +29,8 @@ ___
 <summary>3. 멤버 보호와 생성자</summary>
 <div markdown="1">       
 
+#### 멤버 변수는 private으로 지정하는 것이 바람직
+
+#### 생성자 public으로
 </div>
 </details>
