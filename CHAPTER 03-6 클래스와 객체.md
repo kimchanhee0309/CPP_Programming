@@ -30,7 +30,52 @@ ___
 <div markdown="1">       
 
 #### 멤버 변수는 private으로 지정하는 것이 바람직
+* 클래스의 멤버들은 클래스 외부에서 마음대로 접근할 수 있도록 허용해서는 안 되는 것이 기본임
+* 예시 코드
+```C++
+class Circle {
+public:
+  int radius; //멤버 변수 보호받지 못함
+  Circle();
+  Circle(int r);
+  double getArea();
+};
+
+Circle::Circle() {
+  radius = 1;
+}
+Circle::Circle(int r) {
+  radius = r;
+}
+
+int main() {
+  Circle waffle;
+  waffle.radius = 5; //노출된 멤버는 마음대로 접근(안 좋은 사례)
+}
+```
+```C++
+class Circle {
+private:
+  int radius; //멤버 변수 보호받고 있음
+  Circle();
+  Circle(int r);
+  double getArea();
+};
+
+Circle::Circle() {
+  radius = 1;
+}
+Circle::Circle(int r) {
+  radius = r;
+}
+
+int main() {
+  Circle waffle(5); //생성자에서 radius 설정
+  waffle.radius = 5; //private 멤버 접근 불가
+}
+```
 
 #### 생성자 public으로
+* 클래스 외부에서 객체를 생성하기 위해서는 생성자를 public으로 선언해야 함
 </div>
 </details>
